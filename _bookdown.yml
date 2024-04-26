@@ -1,5 +1,5 @@
 book_filename: "TimeSeriesAnalysis"
-repo: https://github.com/lhduc94/timeseries
+repo: https://github.com/lhduc94/Evaluate_model_performance
 output_dir: "docs"
 language:
   ui:
