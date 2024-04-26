@@ -1,0 +1,11 @@
+--- 
+title: "Đánh giá hiệu suất mô hình"
+author: "Lê Huỳnh Đức"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+description: "Đánh giá hiệu suất mô hình"
+---
+
+# Lời nói đầu {-}
