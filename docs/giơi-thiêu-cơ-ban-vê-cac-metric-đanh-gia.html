@@ -4,20 +4,20 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Đánh giá hiệu suất mô hình</title>
-  <meta name="description" content="Đánh giá hiệu suất mô hình" />
+  <title>Chương 1 Giới thiệu cơ bản về các metric đánh giá | Đánh giá hiệu suất mô hình</title>
+  <meta name="description" content="Chương 1 Giới thiệu cơ bản về các metric đánh giá | Đánh giá hiệu suất mô hình" />
   <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Đánh giá hiệu suất mô hình" />
+  <meta property="og:title" content="Chương 1 Giới thiệu cơ bản về các metric đánh giá | Đánh giá hiệu suất mô hình" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="Đánh giá hiệu suất mô hình" />
+  <meta property="og:description" content="Chương 1 Giới thiệu cơ bản về các metric đánh giá | Đánh giá hiệu suất mô hình" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Đánh giá hiệu suất mô hình" />
+  <meta name="twitter:title" content="Chương 1 Giới thiệu cơ bản về các metric đánh giá | Đánh giá hiệu suất mô hình" />
   
-  <meta name="twitter:description" content="Đánh giá hiệu suất mô hình" />
+  <meta name="twitter:description" content="Chương 1 Giới thiệu cơ bản về các metric đánh giá | Đánh giá hiệu suất mô hình" />
   
 
 <meta name="author" content="Lê Huỳnh Đức" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="index.html"/>
 
-<link rel="next" href="giơi-thiêu-cơ-ban-vê-cac-metric-đanh-gia.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -100,13 +100,21 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Đánh giá hiệu suất mô hình</h1>
-<p class="author"><em>Lê Huỳnh Đức</em></p>
-<p class="date"><em>2024-04-26</em></p>
-</div>
-<div id="lời-nói-đầu" class="section level1 unnumbered hasAnchor">
-<h1>Lời nói đầu<a href="index.html#lời-nói-đầu" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="giơi-thiêu-cơ-ban-vê-cac-metric-đanh-gia" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chương 1</span> Giới thiệu cơ bản về các metric đánh giá<a href="giơi-thiêu-cơ-ban-vê-cac-metric-đanh-gia.html#giơi-thiêu-cơ-ban-vê-cac-metric-đanh-gia" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Giới thiệu evaluation metric là gì? Tại sao cần evaluation metric</p>
+<p>Làm sao để biết một thuật toán, một ô hình là tốt -&gt; cần có một cái gì đó để thể hiện nó tốt -&gt; evaluation_metric ra đời</p>
+<p>Bây giờ có hai thuật toán, làm thế nào để so sánh hai thuật toán với nhau -&gt; Evaluation metric giải quyết đuuợc điều này</p>
+<p>Phân loại các evaluation metric
+- Classification metric
+- Regression metric
+- Ranking metric
+- NLP metric
+- CV metric</p>
+<p>Chúng ta đã có công thức toán để đánh giá, Vậy phương pháp đánh giá sẽ như thế nào
+Nhắc lại về bài toán dự đoánm, dù là classification hay regression, hay ranking chúng ta có thể chia phần dự đoán làm 2 kiệu
+- Dữ liệu được đào tạo là dữ liệu lịch sử, dữ liệu dữ đoán là dữ liệu tương lai. Ví dụ bài toán phổ biến nhất là dự đoán khách hàng có rời bỏ dịch vụ hay không? Từ những dữ liệu quá khứ rời bỏ hoặc ở lại của khách hàng, chúng ta sẽ dự đoán trong tương lai khách hàng có rời bỏ dịch vụ hay không? Hay bài toán dự đoán tháng tiếp theo, khả năng khách hàng mua món đồ của cửa hàng đó là bao nhiêu
+- Dữ liệu được đào tạo là một phần dữ liệu, dữ liệu dự đoán là phần còn lại. Ví dụ bạn cần nhận biết trong số ảnh xe được upload bởi người dùng, ảnh nào là chụp phía trước xe để làm ảnh nội bật trong bài viết. Hệ thống đang có 1 triệu ảnh chưa được nhận diện, để làm một hệ thống tự động, bạn xây dựng một bộ dữ liệu huấn luyện từ một phần của 1 triệu ảnh đó ( ví dụ 10,000 ảnh) và cho máy học sau đó máy sẽ tự động nhận diện phần dữ liệu còn lại, và tất nhiên những hình ảnh trong tương lai được thêm vào máy cũng có thể nhận diện được.</p>
 
 </div>
             </section>
@@ -114,8 +122,8 @@
           </div>
         </div>
       </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="giơi-thiêu-cơ-ban-vê-cac-metric-đanh-gia.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
