@@ -1,0 +1,16 @@
+# Các metric đánh giá
+
+Hai loại cơ bản nhất của các metric đánh giá là Regression task và Classification task. Tuy nhiên, đi sâu vào các bài toán, còn có các metric khác liên quan đến việc xếp hàng mà chúng ta gọi là Ranking metrics. Ngoài ra, các bài toán về các dữ liệu phi cấu trúc như dữ liệu âm thanh, hình ảnh và ngôn ngữ lại có các metric đánh giá phức tạp hơn.
+Sau đây chúng ta sẽ đi vào cơ bản nhất là Regression Task
+
+## Regression Metric
+
+Trong Regression Task, nhiệm vụ của bạn là đưa ra dự đoán một giá trị số thực cho tập thông tin đầu vào. Một bài toán phổ biến nhất là dự đoán giá chứng khoán vào cuối mỗi phiên giao dịch, Hay một bài khác là dự đoán giá nhà dựa vào thông tin của căn nhà đó.
+
+Định nghĩa đầu tiên chúng ta cần nắm bắt là Phần dư (residual) hay phần lỗi.
+
+Phần dư được định nghĩa bằng phần chênh lệch giữa giá trị dự đoán và giá trị thực tế, được tính bởi công thức đơn giản
+
+```
+phần dư = giá trị thực tế - giá trị dự đoán
+```
